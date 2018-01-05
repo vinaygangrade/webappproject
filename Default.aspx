@@ -9,7 +9,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        &nbsp;<asp:Panel ID="Panel1" runat="server" Height="886px">
+        &nbsp;<asp:Panel ID="Panel1" runat="server" Height="853px">
             <asp:Label ID="Label1" runat="server" Text="Are you comfortable with a cloud-based Platform-as-a-Service solution?"></asp:Label>
             <br />
             <asp:Button ID="Button1" runat="server" Text="Yes" OnClick="Button1_Click" />
@@ -36,13 +36,13 @@
             <br />
             <asp:Label ID="Label5" runat="server" Text="How large is your database? (size in GB's)" Visible="False"></asp:Label>
             <br />
-            <asp:TextBox ID="TextBox1" runat="server" Width="123px" TextMode="Number" Visible="False" ></asp:TextBox>
+            <asp:TextBox ID="TextBox1" runat="server" Width="123px" TextMode="Number" Visible="False" required></asp:TextBox>
             <asp:Button ID="Button3" runat="server" Text="Submit" Visible="False" OnClick="Button3_Click" />
             <br />
             <br />
             <asp:Label ID="Label6" runat="server" Text="No of concurrent users?" Visible="False"></asp:Label>
             <br />
-            <asp:TextBox ID="TextBox2" runat="server" Visible="False"></asp:TextBox>
+            <asp:TextBox ID="TextBox2" runat="server" Visible="False" TextMode="Number" required></asp:TextBox>
             <asp:Button ID="Button4" runat="server" Text="Submit" Visible="False" OnClick="Button4_Click" />
             <br />
             <br />
@@ -54,7 +54,7 @@
             <br />
             <asp:Label ID="Label9" runat="server" Text="How often database backup required (in day's)?" Visible="False"></asp:Label>
             <br />
-            <asp:TextBox ID="TextBox3" runat="server" Visible="False" TextMode="Number"></asp:TextBox>
+            <asp:TextBox ID="TextBox3" runat="server" Visible="False" TextMode="Number" required></asp:TextBox>
             <asp:Button ID="Button9" runat="server" Text="Submit" Visible="False" OnClick="Button9_Click" />
             <br />
             <br />
@@ -76,7 +76,7 @@
             <br />
             <asp:Label ID="Label12" runat="server" Text="Calculated azure sql edtu &amp; provide the necessary tier information post review analyis?" Visible="False"></asp:Label>
             <asp:Label ID="Label13" runat="server" Text="Calculated azure sql dtu &amp; provide the necessary tier information post review analyis?" Visible="False"></asp:Label>
-            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="http://dtucalculator.azurewebsites.net/" Visible="False">Click here!!!</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="http://dtucalculator.azurewebsites.net/" Visible="False" Target="_blank">Click here!!!</asp:HyperLink>
             <br />
             <asp:DropDownList ID="DropDownList3" runat="server" Visible="False" AutoPostBack="True" OnSelectedIndexChanged="DropDownList3_SelectedIndexChanged">
                 <asp:ListItem>Please Select</asp:ListItem>
@@ -172,16 +172,10 @@
             <asp:Button ID="Button19" runat="server" Text="No" Visible="False" OnClick="Button19_Click" />
             <br />
             <br />
-            <table style="width:100%;">
-                <tr>
-                    <td><asp:Button ID="Button20" runat="server" OnClick="Button20_Click" Text="Reset" />
-                     <asp:Button ID="Button21" runat="server" Enabled="False" Text="Submit" OnClick="Button21_Click" />
-                    <asp:TextBox ID="TextBox4" runat="server" Height="16px" TextMode="MultiLine" Visible="False" Width="16px"></asp:TextBox></td>
-                </tr>                
-            </table>
-                      
-             </asp:Panel>
-    
+            <asp:Button ID="Button20" runat="server" OnClick="Button20_Click" Text="Reset" />
+            <asp:Button ID="Button21" runat="server" Enabled="False" Text="Submit" OnClick="Button21_Click" />
+            <asp:TextBox ID="TextBox4" runat="server" Height="16px" TextMode="MultiLine" Width="1000px"></asp:TextBox>                      
+            </asp:Panel>    
     </div>
     </form>
 </body>
