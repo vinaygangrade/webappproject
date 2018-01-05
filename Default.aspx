@@ -46,7 +46,7 @@
             <asp:Button ID="Button4" runat="server" Text="Submit" Visible="False" OnClick="Button4_Click" />
             <br />
             <br />
-            <asp:Label ID="Label8" runat="server" Text="Do you require azure sql database auditing and thread detection?" Visible="False"></asp:Label>
+            <asp:Label ID="Label8" runat="server" Text="Do you require azure sql database auditing and threat detection?" Visible="False"></asp:Label>
             <br />
             <asp:Button ID="Button7" runat="server" Text="Yes" Visible="False" OnClick="Button7_Click" />
             <asp:Button ID="Button8" runat="server" Text="No" Visible="False" OnClick="Button8_Click" style="height: 26px" />
@@ -58,25 +58,25 @@
             <asp:Button ID="Button9" runat="server" Text="Submit" Visible="False" OnClick="Button9_Click" />
             <br />
             <br />
-            <asp:Label ID="Label10" runat="server" Text="How log you want to keep the database backup?" Visible="False"></asp:Label>
+            <asp:Label ID="Label10" runat="server" Text="How long you want to keep the database backup?" Visible="False"></asp:Label>
             <br />
             <asp:DropDownList ID="DropDownList2" runat="server" Visible="False" AutoPostBack="True" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged">
                 <asp:ListItem>Please Select</asp:ListItem>
-                <asp:ListItem>Basic service tier is 7 days</asp:ListItem>
-                <asp:ListItem>Standard service tier is 35 days</asp:ListItem>
-                <asp:ListItem>Premium service tier is 35 days</asp:ListItem>
+                <asp:ListItem>7 days</asp:ListItem>
+                <asp:ListItem>15 days</asp:ListItem>
+                <asp:ListItem>35 days</asp:ListItem>
             </asp:DropDownList>
             <br />
             <br />
-            <asp:Label ID="Label11" runat="server" Text="Do you require db pool to be created?" Visible="False"></asp:Label>
+            <asp:Label ID="Label11" runat="server" Text="Do you require database pool to be created?" Visible="False"></asp:Label>
             <br />
             <asp:Button ID="Button10" runat="server" Text="Yes" Visible="False" OnClick="Button10_Click" />
             <asp:Button ID="Button11" runat="server" Text="No" Visible="False" OnClick="Button11_Click" />
             <br />
             <br />
-            <asp:Label ID="Label12" runat="server" Text="Calculated azure sql edtu &amp; provide the necessary tier information post review analyis?" Visible="False"></asp:Label>
-            <asp:Label ID="Label13" runat="server" Text="Calculated azure sql dtu &amp; provide the necessary tier information post review analyis?" Visible="False"></asp:Label>
-            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="http://dtucalculator.azurewebsites.net/" Visible="False" Target="_blank">Click here!!!</asp:HyperLink>
+            <asp:Label ID="Label12" runat="server" Text="Considering above parameters please calculate azure sql edtu &amp; provide the necessary tier information post review analysis?" Visible="False"></asp:Label>
+            <asp:Label ID="Label13" runat="server" Text="Considering above parameters please calculate azure sql dtu &amp; provide the necessary tier information post review analysis?" Visible="False"></asp:Label>
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="http://dtucalculator.azurewebsites.net/" Visible="False" Target="_blank">Click here for dtu calculator!!!</asp:HyperLink>
             <br />
             <asp:DropDownList ID="DropDownList3" runat="server" Visible="False" AutoPostBack="True" OnSelectedIndexChanged="DropDownList3_SelectedIndexChanged">
                 <asp:ListItem>Please Select</asp:ListItem>
@@ -125,7 +125,7 @@
             </asp:DropDownList>
             <br />
             <br />
-            <asp:Label ID="Label15" runat="server" Text="Where do you want to host your azure sql db?" Visible="False"></asp:Label>
+            <asp:Label ID="Label15" runat="server" Text="Where do you want to host your azure sql database?" Visible="False"></asp:Label>
             <br />
             <asp:DropDownList ID="DropDownList4" runat="server" Visible="False" AutoPostBack="True" OnSelectedIndexChanged="DropDownList4_SelectedIndexChanged">
                  <asp:ListItem>Please Select</asp:ListItem>
@@ -160,13 +160,13 @@
             </asp:DropDownList>
             <br />
             <br />
-            <asp:Label ID="Label16" runat="server" Text="Do you required georedudancy?" Visible="False"></asp:Label>
+            <asp:Label ID="Label16" runat="server" Text="Do you require geo-redudancy?" Visible="False"></asp:Label>
             <br />
             <asp:Button ID="Button16" runat="server" Text="Yes" Visible="False" OnClick="Button16_Click" />
             <asp:Button ID="Button17" runat="server" Text="No" Visible="False" OnClick="Button17_Click" />
             <br />
             <br />
-            <asp:Label ID="Label17" runat="server" Text="Do you required In-Memory technologies?" Visible="False"></asp:Label>
+            <asp:Label ID="Label17" runat="server" Text="Do you require in-memory database technology?" Visible="False"></asp:Label>
             <br />
             <asp:Button ID="Button18" runat="server" Text="Yes" Visible="False" Height="26px" OnClick="Button18_Click" />
             <asp:Button ID="Button19" runat="server" Text="No" Visible="False" OnClick="Button19_Click" />
@@ -174,7 +174,7 @@
             <br />
             <asp:Button ID="Button20" runat="server" OnClick="Button20_Click" Text="Reset" />
             <asp:Button ID="Button21" runat="server" Enabled="False" Text="Submit" OnClick="Button21_Click" />
-            <asp:TextBox ID="TextBox4" runat="server" Height="16px" TextMode="MultiLine" Width="1000px"></asp:TextBox>                      
+            <asp:TextBox ID="TextBox4" runat="server" Height="16px" TextMode="MultiLine" Width="1000px" Visible="False">helllo</asp:TextBox>                      
             </asp:Panel>    
     </div>
     </form>
