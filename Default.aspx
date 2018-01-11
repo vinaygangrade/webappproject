@@ -46,7 +46,7 @@
             <asp:Button ID="Button4" runat="server" Text="Submit" Visible="False" OnClick="Button4_Click" />
             <br />
             <br />
-            <asp:Label ID="Label8" runat="server" Text="Do you require azure sql database auditing and threat detection?" Visible="False"></asp:Label>
+            <asp:Label ID="Label8" runat="server" Text="Do you require azure sql database auditing and threat detection?" Visible="False" ToolTip="Threat detection will enable customers to respond to suspicious events in the database, such as SQL Injections, as they occur. It'll provide alerts and allow the use of Azure SQL Database Auditing to explore the suspicious events. This will make it simple to monitor and respond to potential security threats."></asp:Label>
             <br />
             <asp:Button ID="Button7" runat="server" Text="Yes" Visible="False" OnClick="Button7_Click" />
             <asp:Button ID="Button8" runat="server" Text="No" Visible="False" OnClick="Button8_Click" style="height: 26px" />
@@ -68,7 +68,7 @@
             </asp:DropDownList>
             <br />
             <br />
-            <asp:Label ID="Label11" runat="server" Text="Do you require database pool to be created?" Visible="False"></asp:Label>
+            <asp:Label ID="Label11" runat="server" Text="Do you require database pool to be created?" Visible="False" ToolTip="SQL Database elastic pools are a simple, cost-effective solution for managing and scaling multiple databases that have varying and unpredictable usage demands."></asp:Label>
             <br />
             <asp:Button ID="Button10" runat="server" Text="Yes" Visible="False" OnClick="Button10_Click" />
             <asp:Button ID="Button11" runat="server" Text="No" Visible="False" OnClick="Button11_Click" />
@@ -160,13 +160,13 @@
             </asp:DropDownList>
             <br />
             <br />
-            <asp:Label ID="Label16" runat="server" Text="Do you require geo-redudancy?" Visible="False"></asp:Label>
+            <asp:Label ID="Label16" runat="server" Text="Do you require geo-redudancy?" Visible="False" ToolTip="Businesses invest in geographically redundant systems, also known as “georedundancy,” to enable business continuity following a force majeure or major disaster event, whether natural or man-made."></asp:Label>
             <br />
             <asp:Button ID="Button16" runat="server" Text="Yes" Visible="False" OnClick="Button16_Click" />
             <asp:Button ID="Button17" runat="server" Text="No" Visible="False" OnClick="Button17_Click" />
             <br />
             <br />
-            <asp:Label ID="Label17" runat="server" Text="Do you require in-memory database technology?" Visible="False"></asp:Label>
+            <asp:Label ID="Label17" runat="server" Text="Do you require in-memory database technology?" Visible="False" ToolTip="An in-memory database (IMDB, also main memory database system or MMDB or memory resident database) is a database management system that primarily relies on main memory for computer data storage. It is contrasted with database management systems that employ a disk storage mechanism."></asp:Label>
             <br />
             <asp:Button ID="Button18" runat="server" Text="Yes" Visible="False" Height="26px" OnClick="Button18_Click" />
             <asp:Button ID="Button19" runat="server" Text="No" Visible="False" OnClick="Button19_Click" />
